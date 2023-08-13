@@ -21,4 +21,4 @@ def vector_search(query, model, index, num_results=10):
 
 def id2details(df, I, column):
     """Returns the paper titles based on the paper index."""
-    return [list(df[df.id == idx][column]) for idx in I[0]]
+    return [list(df[df.product_id == idx][column]) for idx in I[0]]
